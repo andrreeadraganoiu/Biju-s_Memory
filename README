@@ -1,0 +1,30 @@
+322CD Draganoiu Andreea
+ 
+Tema2 - Memoria lui Biju
+
+1.Reversed One Time Pad - rotp.asm
+	Se iau pe rand octetii din plaintext si octetii
+in ordine inversa din key. Se face xor intre ei iar rezultatul se pune in
+ciphertext.
+
+2.Ages - ages.asm
+	Logica programului incepe din month_date. Se ia fiecare luna in parte in
+ordinea inversa in care sunt puse in structura si se stabileste daca luna prezenta
+este mai mare decat luna datei de nastere. Daca luna actuala este mai mare decat 
+luna de nastere se face scaderea dintre ani. In cazul in care se intampla invers
+se mai scade 1 an. Daca lunile sunt egale se va face similar comparatia dintre 
+ziua curenta si ziua de nastere. Dupa ce se termina fiecare comparatie se ajunge
+din nou in month_date unde algoritmul se reia pentru fiecare data de nastere din
+structura data.
+
+3.Columnar Transposition Cipher - columnar.asm
+	 Se ia fiecare coloana din haystack in ordinea indicata in key si
+se pune caracter cu caracter pana la terminarea caracterelor din matrice. 
+
+4.Cache Load Simulation - cache.asm
+	Primul pas este sa pun un byte din adresa primita la continutul lui 
+address of reg. Caut tag-ul calculat in tags. Daca nu exista il voi adauga in
+tags si voi completa matricea cache calculand pozitia inceputului de linie si
+punand tag-ul in continuarea caruia se adauga 000, 001, .., 111.
+
+	
